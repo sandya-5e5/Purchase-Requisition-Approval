@@ -1,0 +1,15 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Purchase Requisition Projection'
+
+define root view entity ZPR_C_PURCHREQ
+  provider contract transactional_query
+  as projection on ZPR_I_PURCHREQ
+{
+  key PRNumber,
+      Requester,
+      Department,
+      RequiredDate,
+      ApprovalStatus,
+      ApprovedBy,
+      ApprovalDate
+}
