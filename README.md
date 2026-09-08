@@ -54,28 +54,28 @@ The overall architecture of the project is:
 
 Database Table
       |
-      v
+      
 CDS Root View
       |
-      v
+      
 Behavior Definition
       |
-      v
+      
 Projection CDS View
       |
-      v
+      
 Projection Behavior
       |
-      v
+      
 Service Definition
       |
-      v
+      
 Service Binding
       |
-      v
+      
 OData V4
       |
-      v
+      
 Fiori Elements UI
 ##Project Outcome
 The final result is a working Purchase Requisition Approval Form where business users can enter PR information, save the form, maintain approval details, and manage the resulting records through the Fiori Elements interface.
