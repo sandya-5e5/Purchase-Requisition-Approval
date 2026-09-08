@@ -1,0 +1,4 @@
+@EndUserText.label: 'Purchase Requisition UI Service'
+define service ZPR_UI_PURCHREQ {
+  expose ZPR_C_PURCHREQ as PurchaseRequisition;
+}
