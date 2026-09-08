@@ -1,0 +1,14 @@
+managed implementation in class zbp_pr_i_purchreq unique;
+strict ( 2 );
+
+define behavior for ZPR_I_PURCHREQ alias PurchaseRequisition
+persistent table zpr_pr_hdr
+lock master
+authorization master ( none )
+{
+  create;
+  update;
+  delete;
+
+  mapping for zpr_pr_hdr corresponding;
+}
