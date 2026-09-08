@@ -1,0 +1,17 @@
+@EndUserText.label : 'table'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table zpr_pr_hdr {
+
+  key client      : abap.clnt not null;
+  key pr_number   : abap.char(10) not null;
+  requester       : abap.char(40);
+  department      : abap.char(30);
+  required_date   : abap.dats;
+  approval_status : abap.char(20);
+  approved_by     : abap.char(40);
+  approval_date   : abap.dats;
+
+}
