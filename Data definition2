@@ -1,0 +1,16 @@
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'purchase'
+@Metadata.ignorePropagatedAnnotations: true
+define root view entity ZPR_I_PURCHREQ 
+ as select from zpr_pr_hdr
+ 
+{
+      key pr_number   as PRNumber,
+      requester       as Requester,
+      department      as Department,
+      required_date   as RequiredDate,
+      approval_status as ApprovalStatus,
+      approved_by     as ApprovedBy,
+      approval_date   as ApprovalDate
+}
